@@ -33,7 +33,7 @@ jobs:
 
       - name: Build APK
         working-directory: android
-        run: ./gradlew assembleDebug
+        run: |`n    chmod +x gradlew`n    ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
